@@ -1,1 +1,1 @@
-import * as Color from '../src/color'
+import * as Color from 'src/color'

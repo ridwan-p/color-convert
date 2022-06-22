@@ -1,1 +1,0 @@
-export * as Color from "./src/color"
