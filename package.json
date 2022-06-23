@@ -1,6 +1,6 @@
 {
   "name": "@ridwan-p/color-convert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "color converter",
   "main": "dist/color-convert.js",
   "module": "dist/color-convert.esm.js",
