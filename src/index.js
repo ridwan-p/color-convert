@@ -1,1 +1,2 @@
-export * as ColorConverter from './color'
+// export * as default from './color'
+export * from './color'
