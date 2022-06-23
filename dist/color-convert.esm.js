@@ -41,7 +41,7 @@ const hex2RGB = hex => {
   };
 };
 /**
- * Generate the oposite color
+ * Generate the opposite  color
  * 
  * @param { string } hex 
  * @param { boolean } bw
