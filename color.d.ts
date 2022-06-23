@@ -16,14 +16,16 @@ export type HSV = {
   v: number
 }
 
-interface color {
+export interface Color {
   hex2RGB: (hex: string) => RGB
-  invertColor: (hex: string, bw: boolean) => string
+  invertColor: (hex: string, bw?: boolean) => string
   rgb2Hex: (r: number, g: number, b: number) => string
   rgb2HSL: (r: number, g: number, b: number) => HSL
   hex2HSL: (hex: string) => HSL
   rgb2HSV: (r: number, g: number, b: number) => HSV
   hex2HSV: (hex: string) => HSV
 }
+
+declare const color: Color
 
 export default color
