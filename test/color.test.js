@@ -1,4 +1,4 @@
-const ColorConverter = require('../dist/color-convert.cjs')
+const ColorConverter = require('../dist/color-convert')
 
 test('hex to rgb', () => {
   expect(ColorConverter.hex2RGB('#FFF')).toEqual({ r: 255, g: 255, b: 255 })

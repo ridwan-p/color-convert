@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 const clearHex = hex => {
   if (hex.indexOf('#') === 0) {
     hex = hex.slice(1);
@@ -190,11 +188,14 @@ const hex2HSV = hex => {
   } = hex2RGB(hex);
   return rgb2HSV(r, g, b);
 };
+var color = {
+  invertColor,
+  hex2RGB,
+  rgb2Hex,
+  rgb2HSL,
+  hex2HSL,
+  rgb2HSV,
+  hex2HSV
+};
 
-exports.hex2HSL = hex2HSL;
-exports.hex2HSV = hex2HSV;
-exports.hex2RGB = hex2RGB;
-exports.invertColor = invertColor;
-exports.rgb2HSL = rgb2HSL;
-exports.rgb2HSV = rgb2HSV;
-exports.rgb2Hex = rgb2Hex;
+module.exports = color;

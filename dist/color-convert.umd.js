@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["color-convert"] = {}));
-})(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global["color-convert"] = factory());
+})(this, (function () { 'use strict';
 
   const clearHex = hex => {
     if (hex.indexOf('#') === 0) {
@@ -192,15 +192,16 @@
     } = hex2RGB(hex);
     return rgb2HSV(r, g, b);
   };
+  var color = {
+    invertColor,
+    hex2RGB,
+    rgb2Hex,
+    rgb2HSL,
+    hex2HSL,
+    rgb2HSV,
+    hex2HSV
+  };
 
-  exports.hex2HSL = hex2HSL;
-  exports.hex2HSV = hex2HSV;
-  exports.hex2RGB = hex2RGB;
-  exports.invertColor = invertColor;
-  exports.rgb2HSL = rgb2HSL;
-  exports.rgb2HSV = rgb2HSV;
-  exports.rgb2Hex = rgb2Hex;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return color;
 
 }));

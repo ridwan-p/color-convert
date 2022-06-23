@@ -186,5 +186,14 @@ const hex2HSV = hex => {
   } = hex2RGB(hex);
   return rgb2HSV(r, g, b);
 };
+var color = {
+  invertColor,
+  hex2RGB,
+  rgb2Hex,
+  rgb2HSL,
+  hex2HSL,
+  rgb2HSV,
+  hex2HSV
+};
 
-export { hex2HSL, hex2HSV, hex2RGB, invertColor, rgb2HSL, rgb2HSV, rgb2Hex };
+export { color as default };

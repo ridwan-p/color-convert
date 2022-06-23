@@ -162,3 +162,13 @@ export const hex2HSV = (hex) => {
   const { r, g, b } = hex2RGB(hex)
   return rgb2HSV(r, g, b)
 }
+
+export default {
+  invertColor,
+  hex2RGB,
+  rgb2Hex,
+  rgb2HSL,
+  hex2HSL,
+  rgb2HSV,
+  hex2HSV
+}
