@@ -1,6 +1,6 @@
 {
   "name": "@ridwan-p/color-convert",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "color converter",
   "homepage": "https://github.com/ridwan-p/color-convert#readme.md",
   "main": "dist/color-convert.js",
