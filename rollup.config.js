@@ -11,6 +11,7 @@ export default [
       name: "color-convert", // package name
       file: pkg.browser,
       format: "umd",
+      exports: 'default'
     },
     plugins: [
       resolve(),
@@ -23,8 +24,8 @@ export default [
   {
     input: "src/index.js", // your entry point
     output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "es" },
+      { file: pkg.main, format: "cjs", exports: "default" },
+      { file: pkg.module, format: "es", exports: "default" },
     ],
     plugins: [
       babel({
