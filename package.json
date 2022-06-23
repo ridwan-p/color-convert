@@ -1,12 +1,18 @@
 {
   "name": "@ridwan-p/color-convert",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "color converter",
+  "homepage": "https://github.com/ridwan-p/color-convert#readme.md",
   "main": "dist/color-convert.js",
   "module": "dist/color-convert.esm.js",
   "browser": "dist/color-convert.umd.js",
   "author": "ridwan pamungkas <ridwan.pamungks@gmail.com> (https://ridwanpa.com/)",
   "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ridwan-p/color-convert"
+  },
   "keywords": [
     "color",
     "converter",
@@ -29,7 +35,6 @@
     "rollup": "^2.75.7"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ]
 }
