@@ -16,14 +16,28 @@ export type HSV = {
   v: number
 }
 
+export type CMYK = {
+  c: number
+  m: number
+  y: number
+  k: number
+}
+
+export type hex2RGB = (hex: string) => RGB
+export type invertColor = (hex: string, bw?: boolean) => string
+export type rgb2Hex = (r: number, g: number, b: number) => string
+export type rgb2HSL = (r: number, g: number, b: number) => HSL
+export type hex2HSL = (hex: string) => HSL
+export type rgb2HSV = (r: number, g: number, b: number) => HSV
+export type hex2HSV = (hex: string) => HSV
 export interface Color {
-  hex2RGB: (hex: string) => RGB
-  invertColor: (hex: string, bw?: boolean) => string
-  rgb2Hex: (r: number, g: number, b: number) => string
-  rgb2HSL: (r: number, g: number, b: number) => HSL
-  hex2HSL: (hex: string) => HSL
-  rgb2HSV: (r: number, g: number, b: number) => HSV
-  hex2HSV: (hex: string) => HSV
+  hex2RGB: hex2RGB
+  invertColor: invertColor
+  rgb2Hex: rgb2Hex
+  rgb2HSL: rgb2HSL
+  hex2HSL: hex2HSL
+  rgb2HSV: rgb2HSV
+  hex2HSV: hex2HSV
 }
 
 declare const color: Color
